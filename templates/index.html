@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+  .container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contacts input[type="text"],
+#contacts input[type="email"],
+#contacts input[type="tel"],
+#contacts input[type="url"],
+#contacts textarea,
+#contacts button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+#table {
+   margin: auto;
+    position: relative;
+} 
+#contacts {
+  
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contacts h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contacts h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contacts input[type="text"],
+#contacts input[type="email"],
+#contacts input[type="tel"],
+#contacts input[type="url"],
+#contacts textarea {
+  width: 50%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contacts input[type="text"]:hover,
+#contacts input[type="email"]:hover,
+#contacts input[type="tel"]:hover,
+#contacts input[type="url"]:hover,
+#contacts textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contacts textarea {
+  height: 40px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contacts button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #FF7F50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contacts button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contacts button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contacts input:focus,
+#contacts textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+</style>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MPool</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="/static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">MPool</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Posts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Add your post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>The best way to find a ride for Michigan students </strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">MPool provides free carpooling platform to Michigan students</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">We've got what you need! </h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">Easy use</h3>
+              <p class="text-muted mb-0">Our platform is very user friendly</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-paper-plane text-primary mb-3 sr-icon-2"></i>
+              <h3 class="mb-3">Large audience</h3>
+              <p class="text-muted mb-0">Most UofM students heared about our service</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-code text-primary mb-3 sr-icon-3"></i>
+              <h3 class="mb-3">Up to Date</h3>
+              <p class="text-muted mb-0">The posts are updated in real time.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
+              <h3 class="mb-3">Students loved our platform</h3>
+              <p class="text-muted mb-0">People wo have checked our platform have found it
+              user friendly and liked the concept of our website</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+
+
+    </section>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Find your ride!</h2>
+            <hr class="light my-4"></p>
+
+
+
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    text-align: center;
+
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<div >
+<table  >
+  <tr>
+
+    <th>ID</th>
+    <th>From</th>
+    <th>To</th>
+    <th>leaving time </th>
+    <th>arriving time </th>
+    <th>AM/PM </th>
+    <th># of people needed</th>
+    <th>user type</th>
+    <th>payment method</th>
+    <th>estimated amount ($)</th>
+    <!--
+    <th>contact</th>
+  -->
+  </tr>
+  <tr>
+
+            <a href='{{url_for('newMenuItem')}}'>New </a>
+
+
+
+              {% for i in items %}
+
+<tr>
+              <td>{{i.ID}} </td>
+              <td> {{i.From}}</td>
+              <td> {{i.To}}</td> 
+              <td> {{i.time_start}}</td>
+              <td> {{i.time_end}}</td>
+              <td> {{i.time_period}}</td>
+              <td> {{i.people_needed}} </td>
+              <td> {{i.Rider_type}} </td>
+              <td> {{i.payment}} </td>
+              <td> {{i.amount}} </td>
+              <!--
+              <td> {{i.username}} </td>
+            -->
+
+            </tr>
+              <a href='{{url_for('editMenuItem', request_id = i.ID )}}'>Edit </a>
+              <a href='{{url_for('deleteMenuItem', request_id = i.ID )}}'>Delete </a>
+
+
+              {% endfor %}
+
+
+</table>
+</div>
+<br>
+
+<h2 class="mb-4">Didn't find a ride? add your own post!</h2>
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#portfolio"> Add your post</a>
+                    </div>
+
+</body>
+  <br/>
+
+
+ <a href='{{url_for('newMenuItem')}}'>New </a>
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="portfolio" class="bg-dark text-white">
+      <div class="container" text-center">
+      
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+<body>
+
+
+<div class="container" align="center">  
+  <form id="contacts" action="{{url_for('newMenuItem')}}" method="post">
+    <h3>New Post</h3>
+    <h4></h4>
+    <fieldset>
+      <label> Are you a driver or a passenger?   </label>
+<select name="Rider_type">>
+  <option value="driver">driver</option>
+  <option value="passenger">passenger</option>
+</select>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Going from" type="text" tabindex="1" required autofocus
+       name='from'>
+    </fieldset>
+    <fieldset>
+      <input placeholder="To"  type="text" tabindex="1" required name='to' >
+    </fieldset>
+    <fieldset>
+      <input placeholder="start time"   type="text" tabindex="3" required  name='time_start' > 
+</fieldset>
+
+    
+    <fieldset>
+      <input placeholder="end time"   type="text" tabindex="4" required name='time_end'>
+    </fieldset>
+    <label>AM/PM:</label>
+  <select name="time_period">>
+  <option value="AM">AM</option>
+  <option value="PM">PM</option>
+  </select>
+    <fieldset>
+      <input placeholder="number of people needed" type="text" tabindex="5" required name='people_needed' >
+    </fieldset>
+        <fieldset>
+                <input placeholder="payment method (e.g. Venmo)"  type="text" tabindex="5" required name='payment' >
+    </fieldset>
+        <fieldset>
+      <input placeholder="estimated cost in $" tabindex="5"  type="text" required name='amount' >
+    </fieldset>
+        <fieldset>
+      <input placeholder="Rider Tupe (e.g: UM student)"  type="text" tabindex="5" required name='Rider_type' >
+    </fieldset>
+        <fieldset>
+      <input placeholder="Contact info" tabindex="5"  type="text" required name='username' >
+    </fieldset>
+    <fieldset>
+  <a class="btn btn-light btn-xl sr-button"  type="text" href = '{{url_for( 'main_web')}}'>
+Menu</a>
+
+<input class="btn btn-light btn-xl sr-button" type='submit' value='Create'>
+    </fieldset>
+
+  </form>
+</div>
+</section>
+<!--
+<form action="{{url_for('newMenuItem')}}" method = 'post'>
+
+
+<p>ID:</p>
+
+  <input type='text' size='10' name='request_id'>
+
+<label> Are you a driver or a passenger?   </label>
+<select name="Rider_type">>
+  <option value="driver">driver</option>
+  <option value="passenger">passenger</option>
+</select>
+<br> 
+<label>Going from: </label>
+
+  <input type='text' size='10' name='from'>
+  <br> 
+<label>To: </label>
+
+  <input type='text' size='10' name='to'>
+<p>time start:</p>
+
+  <input type='text' size='10' name='time_start'>
+<p>time end:</p>
+
+  <input type='text' size='10' name='time_end'>
+
+  <p>AM/PM:</p>
+  <select name="time_period">>
+  <option value="AM">AM</option>
+  <option value="PM">PM</option>
+</select>
+
+
+
+<p>people needed:</p>
+
+  <input type='text' size='10' name='people_needed'>
+<p>payment method:</p>
+
+  <input type='text' size='10' name='payment'> 
+<p>estimated amount ($):</p>
+
+  <input type='text' size='10' name='amount'>
+
+  <p>Rider type (e.g: UM student, faculty)</p>
+
+  <input type='text' size='10' name='Rider_type'> 
+
+  <p>Contact info</p>
+
+  <input type='text' size='10' name='username'> 
+
+  <br/>
+  <br/>
+
+
+
+</div>
+</form>
+
+</body>
+
+      </div>
+    </section>
+-->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">For any inquiries:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
+            <p>206-356-6249</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="alhazzaa@umich.edu">omaralhazzaa@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/static/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/creative.min.js"></script>
+
+  </body>
+
+</html>

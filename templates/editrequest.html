@@ -1,0 +1,37 @@
+<html>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+<body>
+
+	<div class = 'pane'>
+		<div class = 'header'>
+		<h1> Edit Request </h1>
+	</div>
+<form action='{{url_for('editMenuItem', request_id = request_id )}}' method = 'post'>
+
+<p>From:</p>
+
+	<input type='text' size='30' name='from'>
+<p>To:</p>
+
+	<input type='text' size='30' name='to'>
+<p>time_start:</p>
+
+	<input type='text' size='30' name='time_start'>
+<p>time_end:</p>
+
+	<input type='text' size='30' name='time_end'>
+
+<p>people_needed:</p>
+
+	<input type='text' size='30' name='people_needed'>
+
+<input type='submit' value='Edit'>
+
+<a href = '{{url_for( 'main_web')}}'>
+Menu</a>
+</div>
+</form>
+
+</body>
+<html>
